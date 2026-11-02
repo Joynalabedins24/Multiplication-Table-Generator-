@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #333;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Input Section Styling */
+.input-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+}
+
+.input-card h2 {
+    color: #005f19;
+    margin-bottom: 8px;
+}
+
+.input-card p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.input-group input {
+    padding: 12px 15px;
+    width: 60%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #029028;
+}
+
+.input-group button {
+    padding: 12px 25px;
+    background-color: #005f19;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+    background-color: #029028;
+}
+
+.error-text {
+    display: block;
+    color: #ff4d4d;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+/* Grid Layout for Tables */
+.tables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Individual Table Card Styling */
+.table-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.04);
+    overflow: hidden;
+    border-top: 5px solid #005f19;
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 3s ease forwards;
+}
+
+.table-header {
+    background: #f4fdf6;
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #005f19;
+    border-bottom: 1px solid #e1efe3;
+}
+
+.table-body {
+    padding: 15px;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px dashed #eee;
+    font-size: 15px;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.table-row span.multiply {
+    color: #888;
+}
+
+.table-row span.result {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
