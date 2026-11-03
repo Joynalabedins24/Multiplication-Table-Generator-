@@ -1,6 +1,6 @@
 # Dynamic Multiplication Table Generator
 
-A beautifully designed, fully responsive web application that generates multiplication tables (নামতা) based on user input. Built using clean HTML, modern CSS Grid, and dynamic JavaScript nested loops with staggered entrance animations.
+A beautifully designed, fully responsive web application that generates multiplication tables based on user input. Built using clean HTML, modern CSS Grid, and dynamic JavaScript nested loops with staggered entrance animations.
 
 ## 🚀 Features
 
